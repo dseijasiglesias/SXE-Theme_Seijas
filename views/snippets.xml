@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <template id="snippet_testimonial" name="Testimonial snippet">
+            <section class="snippet_testimonial">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img alt="client" class="img-circle" 
+                                 src="/theme_seijas/static/src/img/customer_person_people_man_user_client_1630.png"/>
+                            <h3>Client Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img alt="client" class="img-circle" 
+                                 src="/theme_seijas/static/src/img/customer_person_people_man_you_1625.png"/>
+                            <h3>Client Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img alt="client" class="img-circle" 
+                                 src="/theme_seijas/static/src/img/customer_person_people_woman_you_1627.png"/>
+                            <h3>Client Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+            <xpath expr="//div[@id='snippet_structure']" position="inside">
+                <t t-snippet="theme_seijas.snippet_testimonial"
+                   t-thumbnail="/theme_seijas/static/src/img/ui/snippet_thumb.jpg"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>
