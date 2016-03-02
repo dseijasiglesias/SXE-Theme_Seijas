@@ -8,7 +8,8 @@
         'views/layout.xml',
         'views/pages.xml',
         'views/assets.xml',
-        'views/snippets.xml'
+        'views/snippets.xml',
+        'views/vacaciones.xml'
     ],
     'category': 'Theme/Creative',
     'depends': ['website'],

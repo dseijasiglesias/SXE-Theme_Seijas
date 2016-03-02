@@ -14,3 +14,16 @@
     margin-bottom: 1em;
     font-size: 1.5em;
 }
+
+.vacaciones li {
+    display: block;
+    position: relative;
+    float: left;
+    background-color: #F5D5D5;
+    color: #AC7E7E;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    font-size: 1.5em;
+}

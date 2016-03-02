@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+
+        <!-- === Services Page === -->
+        <template name="Vacaciones" id="website.vacaciones" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Our Vacations</h1>
+                        <ul class="vacaciones">
+                            <li><img src="/theme_seijas/static/src/img/UnicornioRosaInvisible.png" 
+                                     width="333" height="232" alt="Unicornio Rosa Invisible"/>
+                            </li>
+                            <li>Este es el Unicornio Invisible Rosa<br/>que encontramos en vacaciones</li>
+                        </ul>
+                        <!-- === Snippets' area === -->
+                        <div class="oe_structure" />
+                    </div>
+                </div>
+            </t>
+        </template>
+        <record id="vacaciones_page_link" model="website.menu">
+            <field name="name">Vacaciones</field>
+            <field name="url">/page/vacaciones</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">99</field>
+        </record>
+    </data>
+</openerp>
